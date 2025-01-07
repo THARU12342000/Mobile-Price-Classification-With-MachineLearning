@@ -14,7 +14,7 @@ By analyzing features such as **battery power**, **clock speed**, **internal mem
   - Battery Power  
   - Clock Speed  
   - Internal Memory  
-  - Mobile Weight  
+  - Mobile Weight etc
 
 ---
 
