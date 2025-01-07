@@ -1,39 +1,53 @@
 📱 Mobile Price Classification
+🏷 Project Overview
+In today’s competitive smartphone market, determining the right price for a mobile phone is essential for manufacturers and consumers. This project aims to build a machine learning model to classify mobile phones into different price ranges based on their technical features.
 
-🌟 Overview
-
-This project uses Machine Learning to classify mobile phones into four price ranges:
-
-0: Low-cost
-1: Medium-cost
-2: High-cost
-3: Very high-cost
-
-By analyzing features like battery power, RAM, and screen resolution, we aim to help manufacturers position products competitively and assist consumers in making informed decisions.
+By analyzing features such as battery power, clock speed, internal memory, and mobile weight, we leverage machine learning techniques to help manufacturers make informed pricing and product decisions, while also assisting consumers in choosing the right product for their needs.
 
 📊 Dataset
+Dataset Name: Mobile Price Classification
 
-The dataset, sourced from Kaggle, includes:
-2000 entries with 20 features (e.g., battery power, camera, connectivity options).
-Target variable: price_range.
+Source: Kaggle
+Features Used:
+Battery Power
+Clock Speed
+Internal Memory
+Mobile Weight
+🧠 Machine Learning Models
+1️⃣ Random Forest
+Training Accuracy: 100%
+Testing Accuracy: 92.25%
+Key Insights:
+High training accuracy indicates the model captures the dataset patterns well.
+Slight overfitting observed as the test accuracy is ~8% lower than training accuracy.
+Struggles slightly with Class 2 predictions.
+2️⃣ Support Vector Machine (SVM)
+Training Accuracy: 97.69%
+Testing Accuracy: 96.75%
+Key Insights:
+Balanced performance across all classes.
+Minimal difference between training and testing accuracy, indicating good generalization.
+Model is well-suited for deployment.
+📈 Conclusion
+Random Forest: Excellent training accuracy but requires fine-tuning to improve performance for Class 2.
+SVM: Balanced and well-generalized performance, making it deployment-ready.
+Both models demonstrate the power of machine learning in classifying mobile price ranges effectively.
 
-🧠 Models and Results
-
-Random Forest:
-Training accuracy: 100%
-Testing accuracy: 92.25% (minor overfitting detected).
-
-Support Vector Machine (SVM):
-Training accuracy: 97.69%
-Testing accuracy: 96.75% (robust and well-balanced).
-
-Conclusion: SVM is the recommended model due to its consistent performance across all classes.
-
-🛠️ Applications
-
-For Manufacturers: Optimize pricing and feature design.
-For Consumers: Empower decision-making based on specifications.
-
-📚 References
-
-Dataset: Mobile Price Classification
+🚀 Repository Contents
+notebooks/
+Jupyter notebooks for data analysis and model training.
+models/
+Saved models for Random Forest and SVM.
+src/
+Source code for preprocessing, feature engineering, and training pipelines.
+data/
+Preprocessed dataset files.
+🛠 Technologies Used
+Programming Language: Python
+Libraries:
+Pandas, NumPy (Data Analysis)
+Scikit-learn (Machine Learning)
+Matplotlib, Seaborn (Visualization)
+📂 How to Run the Project
+Clone the repository:
+git clone https://github.com/your-username/mobile-price-classification.git
